@@ -1,0 +1,12 @@
+# Template only. Replace the example filenames with real approved Scrubs files in ~/clipping-agent/inbox.
+# Do NOT list the same source under both humor and emotional profiles.
+# Copy this to jobs/tonight.toml after backing up any existing jobs file.
+
+[[campaigns]]
+name = "Scrubs Discovery — review candidates only"
+brief = "scrubs-discovery.md"
+posting_config = "scrubs-discovery-posting.json"
+videos = [
+  "REPLACE-WITH-APPROVED-SCRUBS-VIDEO-1.mp4",
+  "REPLACE-WITH-APPROVED-SCRUBS-VIDEO-2.mp4",
+]

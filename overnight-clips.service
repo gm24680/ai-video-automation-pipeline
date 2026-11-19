@@ -1,0 +1,16 @@
+[Unit]
+Description=Overnight clipping batch (local source videos)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=gm246800
+WorkingDirectory=/home/gm246800/clipping-agent
+ExecStart=/home/gm246800/local-ai-agents/.venv/bin/python /home/gm246800/clipping-agent/batch_runner.py --manifest jobs/tonight.toml
+TimeoutStartSec=infinity
+# Long jobs are intentionally not restarted automatically.
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

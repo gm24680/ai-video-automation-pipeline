@@ -1,0 +1,64 @@
+# Python
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Credentials and configuration
+secrets/
+.env
+.env.*
+!.env.example
+config/youtube_accounts.json
+config/campaign_eligibility.json
+
+# Databases
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+
+# Generated media and output
+inbox/
+drafts/
+vertical/
+finished/
+subtitles/
+styled-subtitles/
+headlines/
+post-captions/
+working/
+reports/
+review/
+logs/
+
+# Private campaign and job data
+campaigns/*
+!campaigns/campaign-template.md
+jobs/*
+!jobs/*.example.toml
+
+# Temporary files and backups
+*.bak
+*.backup
+*.backup.*
+*.zip
+*.swp
+*.lock
+*.before-*
+*.broken-backup
+*.png
+
+# Local tools
+.DS_Store
+.vscode/
+.idea/
+.gitignore.before-github
+
+# Private campaign workspace
+vyro-campaigns/
+
+# Local Git backup
+.gitignore.before-github
